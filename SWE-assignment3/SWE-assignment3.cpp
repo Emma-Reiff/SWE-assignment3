@@ -1,10 +1,22 @@
 #include <iostream>
 
+
 int main()
 {
     
+    std::cout << "Enter 5 numbers to perform addition and multiplication on: \n";
+    
+    int arr[5];
 
+    for (int i = 0; i < sizeof(arr); i++) 
+    {
+        std::cin >> arr[i];
+    }
 
+    int sum = add(arr);
+    int product = multiply(arr);
+
+    std::cout << sum << std::endl << product << std::endl;
 
 }
 
